@@ -61,6 +61,49 @@
               </svg>
 
 </button>
+<p class="form-name">Оставьте свои данные, мы вам перезвоним</p>
+<form class="order" name="order_form" autocomplete="on" novalidate>
+  <div class="icon-field">
+  <label>Имя</label>
+    <div class="input-icon">
+    <svg class="link-icon" width="12" height="12">
+    <use href="images/sprite.svg#icon-user"></use>
+    </svg>
+  </div>
+        <input type="text" name="name" />
+  </div>
+<div class="icon-field">
+  <label>Телефон</label>
+    <div class="input-icon">
+    <svg class="link-icon" width="13" height="13">
+    <use href="images/sprite.svg#icon-tel"></use>
+    </svg>
+  </div>
+        <input type="tel" name="phone_number" />
+  </div>
+  <div class="icon-field">
+  <label>Почта </label>
+    <div class="input-icon">
+    <svg class="link-icon" width="15" height="12">
+    <use href="images/sprite.svg#icon-mail"></use>
+    </svg>
+  </div>
+    
+    <input type="email" name="email" />
+ </div>
+
+  <label>
+    Комментарий
+    <textarea name="info" rows="5" name="coments" placeholder="Введите текст"></textarea>
+  </label>
+
+   <label>
+      <input type="checkbox" name="condition" value="yes">
+      Соглашаюсь с рассылкой и принимаю <a>Условия договора</a>
+    </label>
+
+  <p><button class="button" type="submit">Отправить</button></p>
+</form>
             </div>
           </div>
 
@@ -73,7 +116,7 @@
           <li class="quality">
             <div class="quality-box">
               <svg class="quality-icon" width="70" height="70">
-                <use href="./images/sprite.svg#icon-antenna"></use>
+                <use href="./images/icon.svg#icon-antenna"></use>
               </svg>
             </div>
             <h3>Внимание к деталям</h3>
@@ -86,7 +129,7 @@
           <li class="quality">
                         <div class="quality-box">
                           <svg class="quality-icon" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-clock"></use>
+                            <use href="./images/icon.svg#icon-clock"></use>
                           </svg>
                         </div>
             <h3>Пунктуальность</h3>
@@ -98,7 +141,7 @@
           <li class="quality">
                         <div class="quality-box">
                           <svg class="quality-icon" width="70" height="70">
-                            <use href="./images/sprite.svg#icon-diagram"></use>
+                            <use href="./images/icon.svg#icon-diagram"></use>
                           </svg>
                         </div>
             <h3>Планирование</h3>
@@ -388,6 +431,21 @@
                         </li>
                       </ul>
       </div>
+<div class="subcribe">
+<p>Подпишитесь на рассылку</p>
+  <form >
+  
+    <input type="email" name="email" placeholder="Email" />
+
+  <button class="button-subcribe" type="submit">Подписаться
+  <div class="button-icon">
+    <svg class="link-icon" width="24" height="24">
+    <use href="../images/icon.svg#icon-plane"></use>
+    </svg>
+  </div>
+  </button>
+  </form></div>
+      
       </div>
     </footer>
     <script src="./js/modal.js"></script>
