@@ -102,7 +102,7 @@ h2 {
   display: block;
 }
 
-input {
+.form-field {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -115,7 +115,7 @@ input {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-textarea {
+.form-field-text {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -702,7 +702,7 @@ address a {
   letter-spacing: 0.03em;
 }
 
-.subcribe input[type="email"] {
+.subcribe-field {
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
