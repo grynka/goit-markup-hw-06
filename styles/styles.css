@@ -225,12 +225,12 @@ input:focus {
   border-color: transparent;
 }
 
-textarea:focus {
+.form-field-text:focus {
   outline: 1px solid var(--brand-color-blue);
   border-color: transparent;
 }
 
-textarea:focus-visible {
+.form-field-text:focus-visible {
   outline: 0
 }
 
