@@ -147,9 +147,13 @@ form {
   display: flex;
 }
 
-input[type="checkbox"] {
+.checkbox {
   width: 0;
   height: 0;
+}
+
+.checkbox:focus {
+    outline: none;
 }
 
 .input-icon {
