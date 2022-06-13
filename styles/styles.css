@@ -37,7 +37,6 @@ h2 {
 
 .form {
   width: 528px;
-  height: 581px;
   background: #ffffff;
   margin: auto;
   padding: 40px;
@@ -107,12 +106,20 @@ h2 {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 4px;
   padding: 12px 40px;
   outline: none;
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field-title {
+    margin-bottom: 4px;
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    line-height: 1.17em;
 }
 
 .form-field-text {
@@ -225,13 +232,14 @@ input:focus {
   border-color: transparent;
 }
 
-.form-field-text:focus {
-  outline: 1px solid var(--brand-color-blue);
-  border-color: transparent;
-}
 
 .form-field-text:focus-visible {
   outline: 0
+}
+
+.form-field-text:focus {
+  outline: 1px solid var(--brand-color-blue);
+  border-color: transparent;
 }
 
 .form a {
@@ -733,6 +741,10 @@ address a {
 .subcribe-field:focus {
   border-color: var(--brand-color-blue);
   color: var(--brand-color-white);
+}
+
+.button-subcribe:hover {
+  background-color: #188ce8;
 }
 
 .button-subcribe {
