@@ -108,7 +108,7 @@ h2 {
   border-radius: 4px;
   padding: 12px 40px;
   outline: none;
-  transition-property: outline;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -131,7 +131,7 @@ h2 {
   margin-top: 4px;
   margin-bottom: 20px;
   outline: none;
-  transition-property: outline;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -227,32 +227,40 @@ input:focus + .input-icon {
   fill: var(--brand-color-blue);
 }
 
-input:focus-visible {
+.form-field:focus-visible {
   outline: 0;
 }
 
-input:focus {
-  outline: 1px solid var(--brand-color-blue);
-  border-color: transparent;
+.form-field:focus {
+  outline: 0;
+  border-color: var(--brand-color-blue);
 }
-
 
 .form-field-text:focus-visible {
   outline: 0
 }
 
 .form-field-text:focus {
-  outline: 1px solid var(--brand-color-blue);
-  border-color: transparent;
+  outline: 0;
+  border-color: var(--brand-color-blue);
 }
 
-.form a {
-  color: var(--brand-color-blue);
-  text-decoration: underline;
+.check a:hover {
+    text-decoration: none;
+}
+
+.check a {
+    color: var(--brand-color-blue);
 }
 
 .form .button:hover {
   background-color: #188ce8;
+}
+
+.checkbox:focus + .checkeds-icon{
+    box-shadow: 2px 2px 2px rgb(0 0 0 / 25%);
+    width: 16px;
+    height: 15px;
 }
 
 /*--------END MODAL----------*/
